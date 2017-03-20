@@ -3,5 +3,5 @@ services:
   - docker
 
 before_install:
-docker build -t ip .
-docker run ip
+- docker build -t ip .
+- docker run ip
