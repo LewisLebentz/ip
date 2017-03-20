@@ -1,6 +1,5 @@
 FROM alpine:latest
 
-RUN apk add --update curl
-CMD /usr/bin/curl "wtfismyip.com/text"
+RUN apk add --no-cache curl && \
+curl -sSL http://wtfismyip.com/text
 
-ENTRYPOINT ["/usr/bin/curl"]
